@@ -53,7 +53,7 @@ header > p{
 
 .container#apr{
     text-align: center;
-    padding: 20px;
+    padding: 80px;
 }
 
 .container#apr > h2{
@@ -122,7 +122,7 @@ header > p{
 
 .container#end{
     text-align: center;
-    padding: 20px;
+    padding: 80px;
 }
 
 .container#end > h2{
@@ -143,7 +143,7 @@ footer{
     flex-direction: row;
     flex: 1;
     text-align: center;
-    padding: 40px;
+    
     font-size: 1.2em;
     color: white;
    
