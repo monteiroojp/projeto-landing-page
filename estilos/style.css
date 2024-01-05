@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
+
 *{
     padding: 0px;
     margin: 0px;
@@ -12,6 +13,8 @@ body{
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
 
 .container{
     display: flex;
@@ -62,17 +65,6 @@ header > p{
     font-size: 1.1em;
 }
 
-.proj div{
-    width: 250px;
-    height: 250px;
-    border: 1px solid white;
-}
-
-.proj{
-    width: 250px;
-    text-align: center;
-}
-
 .container#mid{
     flex-direction: row;
     background-color: rgb(78, 78, 78);
@@ -81,13 +73,39 @@ header > p{
     padding: 50px;
 }
 
+.container#mid > a{
+    text-decoration: none;
+}
+
 .proj{
+    width: 250px;
+    height: 400px;
+    text-align: center;
     margin: 40px;
+    background-color: black;
+}
+
+.proj div{
+    width: 248px;
+    height: 250px;
+    border: 1px solid black;
+}
+.proj:hover{
+    transform:translate(0px ,-10px);
+    background-color: lightgrey;
+
+}
+
+.proj > p{
+    padding: 40px;
+    color: white;
 }
 
 .img{
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 20px;
+    background-position: center center;
 }
 
 .img#img01{
@@ -100,4 +118,101 @@ header > p{
 
 .img#img03{
     background-image: url(../imagens/proj03.jpg);
+}
+
+.container#end{
+    text-align: center;
+    padding: 20px;
+}
+
+.container#end > h2{
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+
+.container#end > p{
+    font-size: 1.1em;
+}
+
+footer{
+    width: 100%;
+}
+
+.container#footer01{
+    flex-direction: row;
+    flex: 1;
+    text-align: center;
+    padding: 40px;
+    font-size: 1.2em;
+    color: white;
+   
+}
+
+.container#footer01 > div{
+    width: 100%;
+    height: 250px;
+    
+}
+
+.container#footer01 > div#d01{
+    background-color: #2690D4;
+    padding: 40px;
+}
+
+.container#footer01 > div#d01 > h2{
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.container#footer02 > div{
+    width: 100%;
+    height: 250px;
+    
+}
+
+.container#footer01 > div#d02{
+    background-color: #333333;
+    padding: 40px;
+}
+
+.container#footer01 > div#d02 > h2{
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.container#footer02{
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: center;
+    padding: 0px;
+    font-size: 1.2em;
+    color: white;
+    background-color: black;
+   
+}
+
+.container#footer02 > div{
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+}
+
+.container#footer02 a{
+    text-decoration: none;
+    color: white;
+}
+.container#footer02 a:hover{
+    text-decoration: underline;
+}
+
+
+@media (max-width:950px)
+{
+    .container#footer01{
+        flex-wrap: wrap;
+    }
+    .container#footer02{
+        flex-wrap: wrap;
+    }
 }
