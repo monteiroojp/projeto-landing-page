@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    height: 97vh;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    height: 50vh;
+    background: black url(../imagens/img01.jpg) no-repeat fixed;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Libre Baskerville', serif;
+}
+
+header > h1{
+    color: rgb(218, 218, 218);
+    background-color: rgba(0, 0, 0, 0.39);
+    margin: 20px;
+    font-size: 2.5em;
+    text-align: center;
+    min-width: 320px;
+}
+
+header > p{
+    color: white;
+    text-align: center;
+    max-width: 800px;
+    min-width: 700px;
+    padding: 20px;
+    font-size: 1.1em;
+    background-color: rgba(0, 0, 0, 0.39);
+   
+}
+
+.container#apr{
+    text-align: center;
+    padding: 20px;
+}
+
+.container#apr > h2{
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.container#apr > p{
+    font-size: 1.1em;
+}
+
+.proj div{
+    width: 250px;
+    height: 250px;
+    border: 1px solid white;
+}
+
+.proj{
+    width: 250px;
+    text-align: center;
+}
+
+.container#mid{
+    flex-direction: row;
+    background-color: rgb(78, 78, 78);
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.proj{
+    margin: 40px;
+}
+
+.img{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img#img01{
+    background-image: url(../imagens/proj01.jpg);
+}
+
+.img#img02{
+    background-image: url(../imagens/proj02.jpg);
+}
+
+.img#img03{
+    background-image: url(../imagens/proj03.jpg);
+}
